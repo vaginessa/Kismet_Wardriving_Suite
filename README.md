@@ -9,4 +9,6 @@ Setup:
 
 3) Make sure you installed kismet, gpsd, giskismet and BlueNMEA
 
+This early release is meant to be used in conjunction with Linux Deploy by Meefik. The app connects back to the SSH server it starts and issues commands trough the Jsch Java library. Default password is set as "changeme", so don't change it in Linux Deploy.
+
 The app was built with Android Studio
