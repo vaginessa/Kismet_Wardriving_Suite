@@ -24,3 +24,5 @@ Coming soon:
 -Ability of request statistics about the captures.
 
 -Ability to handle the output of the different commands in different ways.
+
+-Error handling in case the connection went down or was not set up.
