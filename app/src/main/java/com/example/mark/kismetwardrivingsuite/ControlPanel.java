@@ -45,8 +45,10 @@ public class ControlPanel extends Fragment {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                commander.close();
-                session.disconnect();
+                if (session != null) {
+                    commander.close();
+                    session.disconnect();
+                }
                 getActivity().getSupportFragmentManager().popBackStack();
                 System.exit(0);
             }
@@ -54,7 +56,7 @@ public class ControlPanel extends Fragment {
         giskismet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                commander.println("/scripts/Giskismet.sh");
+                commander.println("/scripts/KismetWardrivingSuite.sh giskismet "+ Settings.storage.getText().toString());
             }
         });
         gpsd.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -66,7 +68,8 @@ public class ControlPanel extends Fragment {
                         protected Void doInBackground(Integer... params) {
                             try {
                                 if (Setupdone == 0)
-                                    executeRemoteCommand("root", "changeme", "127.0.0.1", 22);
+                                 //   executeRemoteCommand("root", "changeme", "127.0.0.1", 22);
+                                executeRemoteCommand(Settings.username.getText().toString(),Settings.password.getText().toString(),Settings.address.getText().toString(),22);
                                 Setupdone = 1;
                                 commander.println("gpsd -n -N -D5 tcp://localhost:4352 &");
 
@@ -133,7 +136,7 @@ public class ControlPanel extends Fragment {
 
         //commander.close();
         //session.disconnect();
-
+        System.out.println("DONE");
         return "Connection Enstablished!";
     }
 
@@ -142,7 +145,6 @@ public class ControlPanel extends Fragment {
         Bundle b = new Bundle();
         b.putString("msg", text);
         f.setArguments(b);
-
         return f;
     }
 }

@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by mark on 01/08/15.
  */
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter{
-    final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "Control Panel", "Output" };
+    final int PAGE_COUNT = 3;
+    private String tabTitles[] = new String[] { "Control Panel", "Output", "Hub" };
 
     private Context context;
 
@@ -32,6 +32,8 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter{
                 return ControlPanel.newInstance("FirstFragment, Instance 1");
             case 1:
                 return Output.newInstance("SecondFragment, Instance 1");
+            case 2:
+                return Settings.newInstance("ThirdFragment, Instance 1");
             default:
                 return Output.newInstance("ThirdFragment, Default");
         }

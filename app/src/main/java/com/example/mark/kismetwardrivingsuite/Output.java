@@ -27,7 +27,10 @@ public class Output extends Fragment {
         outputup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mTextView.setText(ControlPanel.baos.toString());
+                String baostripped=ControlPanel.baos.toString();
+                if (baostripped.length()>=40000)
+                baostripped= ControlPanel.baos.toString().substring(ControlPanel.baos.toString().length()-40000,ControlPanel.baos.toString().length());
+                mTextView.setText(baostripped);
             }
         });
        return view;

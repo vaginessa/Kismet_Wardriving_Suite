@@ -36,8 +36,8 @@ public class Main_Kismet_Wardriving_Suite extends ActionBarActivity {
         setContentView(R.layout.kismet_main_activity);
         getSupportActionBar().setTitle(Html.fromHtml("<font  color='#900000'> Kismet Wardriving Suite </font> "));
         // Get the ViewPager and set it's PagerAdapter so that it can display items
-
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setOffscreenPageLimit(2);
         SampleFragmentPagerAdapter pagerAdapter =
                 new SampleFragmentPagerAdapter(getSupportFragmentManager(), Main_Kismet_Wardriving_Suite.this);
         viewPager.setAdapter(pagerAdapter);

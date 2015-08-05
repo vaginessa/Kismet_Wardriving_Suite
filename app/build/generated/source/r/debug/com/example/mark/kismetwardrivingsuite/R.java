@@ -2056,7 +2056,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0d0055;
         public static final int action_mode_bar_stub=0x7f0d0054;
         public static final int action_mode_close_button=0x7f0d003d;
-        public static final int action_settings=0x7f0d0081;
+        public static final int action_settings=0x7f0d008d;
         public static final int activities_tabs=0x7f0d006e;
         public static final int activity_chooser_view_content=0x7f0d003e;
         public static final int alertTitle=0x7f0d0048;
@@ -2066,6 +2066,7 @@ containing a value of this type.
         public static final int button=0x7f0d006c;
         public static final int button2=0x7f0d0068;
         public static final int button3=0x7f0d007f;
+        public static final int button4=0x7f0d008b;
         public static final int buttonPanel=0x7f0d004e;
         public static final int cancel_action=0x7f0d0073;
         public static final int center=0x7f0d001c;
@@ -2084,6 +2085,10 @@ containing a value of this type.
         public static final int dialog=0x7f0d0031;
         public static final int disableHome=0x7f0d000e;
         public static final int dropdown=0x7f0d0032;
+        public static final int editText=0x7f0d0085;
+        public static final int editText2=0x7f0d0086;
+        public static final int editText3=0x7f0d0083;
+        public static final int editText4=0x7f0d0081;
         public static final int edit_query=0x7f0d005a;
         public static final int end=0x7f0d0021;
         public static final int end_padder=0x7f0d007e;
@@ -2157,9 +2162,16 @@ containing a value of this type.
         public static final int text2=0x7f0d007a;
         public static final int textSpacerNoButtons=0x7f0d004b;
         public static final int textView=0x7f0d0080;
+        public static final int textView10=0x7f0d008a;
+        public static final int textView11=0x7f0d008c;
         public static final int textView2=0x7f0d0067;
         public static final int textView3=0x7f0d006a;
         public static final int textView4=0x7f0d006d;
+        public static final int textView5=0x7f0d0088;
+        public static final int textView6=0x7f0d0082;
+        public static final int textView7=0x7f0d0087;
+        public static final int textView8=0x7f0d0084;
+        public static final int textView9=0x7f0d0089;
         public static final int time=0x7f0d0078;
         public static final int title=0x7f0d0044;
         public static final int title_template=0x7f0d0047;
@@ -2229,7 +2241,8 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f04002d;
         public static final int select_dialog_multichoice_material=0x7f04002e;
         public static final int select_dialog_singlechoice_material=0x7f04002f;
-        public static final int support_simple_spinner_dropdown_item=0x7f040030;
+        public static final int settings=0x7f040030;
+        public static final int support_simple_spinner_dropdown_item=0x7f040031;
     }
     public static final class menu {
         public static final int menu_main__kismet__wardriving__suite=0x7f0e0000;
