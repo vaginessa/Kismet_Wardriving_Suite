@@ -10,7 +10,7 @@ Setup:
 3) Make sure you installed kismet, gpsd, giskismet and BlueNMEA
 
 First Commit: This early release is meant to be used in conjunction with Linux Deploy by Meefik. The app connects back to the SSH server it starts and issues commands trough the Jsch Java library. Default password is set as "changeme", so don't change it in Linux Deploy.
-Second Commit: The app has been updated, look at the changelog for more infos aout the features. This time, you will not be force to use only Linux Deploy's settings, however running SSH on port 22 is still a must. Still on the bleeding edge and may contain bugs.
+Second Commit: The app has been updated, look at the changelog for more infos aout the features. This time, you will not be force to use only Linux Deploy's settings, however running SSH on port 22 is still a must. Still on the bleeding edge and may contain bugs. As a storing path, you must enter the path on your linux chrooted environment. To save on the sdcard, mount it on Linux Deploy or your chroot manager and insert the right path.
 
 The app was built with Android Studio
 
