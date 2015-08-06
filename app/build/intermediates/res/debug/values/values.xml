@@ -52,6 +52,7 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <!-- From: file:/home/mark/AndroidStudioProjects/KismetWardrivingSuite/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <item name="customlightred" type="color">#ffff6c56</item>
     <item name="customred" type="color">#FFB13E3E</item>
     <item name="darkblue" type="color">#FF0099CC</item>
     <item name="darkgreen" type="color">#FF669900</item>
@@ -1692,7 +1693,7 @@
     <eat-comment/>
     <style name="custom_tab_layout" parent="Widget.Design.TabLayout">
         <item name="tabMaxWidth">@dimen/tab_max_width</item>
-        <item name="tabIndicatorColor">@color/customred</item>
+        <item name="tabIndicatorColor">@color/customlightred</item>
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabPaddingStart">12dp</item>
         <item name="tabPaddingEnd">12dp</item>

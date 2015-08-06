@@ -17,6 +17,8 @@ import org.w3c.dom.Text;
  */
 public class Output extends Fragment {
     static TextView mTextView;
+    static public String OUTPUT_SUBSTRING="";
+    static public String OUTPUT=ControlPanel.baos.toString();
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
@@ -27,10 +29,16 @@ public class Output extends Fragment {
         outputup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String baostripped=ControlPanel.baos.toString();
-                if (baostripped.length()>=40000)
-                baostripped= ControlPanel.baos.toString().substring(ControlPanel.baos.toString().length()-40000,ControlPanel.baos.toString().length());
-                mTextView.setText(baostripped);
+                int lenght=ControlPanel.baos.toString().length();
+                if ( lenght>= 10000) {
+                    Output.OUTPUT_SUBSTRING = ControlPanel.baos.toString().substring(lenght - 10000, lenght);
+                    ControlPanel.baos.reset();
+                }
+                if (OUTPUT_SUBSTRING!="")
+                Output.OUTPUT = Output.OUTPUT_SUBSTRING.substring(ControlPanel.baos.toString().length(), Output.OUTPUT_SUBSTRING.length()) + ControlPanel.baos.toString();
+                else
+                Output.OUTPUT=ControlPanel.baos.toString();
+                mTextView.setText(OUTPUT);
             }
         });
        return view;

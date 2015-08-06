@@ -41,7 +41,6 @@ public class Main_Kismet_Wardriving_Suite extends ActionBarActivity {
         SampleFragmentPagerAdapter pagerAdapter =
                 new SampleFragmentPagerAdapter(getSupportFragmentManager(), Main_Kismet_Wardriving_Suite.this);
         viewPager.setAdapter(pagerAdapter);
-
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.activities_tabs);
         tabLayout.setupWithViewPager(viewPager);

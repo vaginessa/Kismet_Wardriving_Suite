@@ -10,7 +10,7 @@
 
     <style name="custom_tab_layout" parent="Widget.Design.TabLayout">
         <item name="tabMaxWidth">@dimen/tab_max_width</item>
-        <item name="tabIndicatorColor">@color/customred</item>
+        <item name="tabIndicatorColor">@color/customlightred</item>
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabPaddingStart">12dp</item>
         <item name="tabPaddingEnd">12dp</item>
