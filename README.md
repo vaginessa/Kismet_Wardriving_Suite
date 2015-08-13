@@ -1,6 +1,10 @@
 # Kismet_Wardriving_Suite
 Android tool for automatization of kismet_server, gpsd and giskismet in a chrooted environment.
 
+
+- Twitter: @ciuffysrise
+- Email: ciuffysrise@gmail.com
+
 #Setup:
 
 1) Copy the KismetWardrivingSuite.sh script to your chrooted Linux environment in /scripts/
